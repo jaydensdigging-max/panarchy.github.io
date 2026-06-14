@@ -3,66 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slang Dictionary - Panarchy</title>
+    <title>Dictionary - Panarchy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">Panarchy</h1>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="dictionary.html">Dictionary</a></li>
-                <li><a href="posts.html">Posts</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="container">
+        <header>
+            <h1>PANARCHY</h1>
+            <p>slang dictionary</p>
+            <hr>
+        </header>
 
-    <main class="container">
-        <h2 style="color: #00d4ff; margin-bottom: 2rem;">📚 Slang Dictionary</h2>
-        
-        <div class="dictionary-section">
+        <nav>
+            <a href="index.html">[home]</a> | 
+            <a href="dictionary.html">[dictionary]</a> | 
+            <a href="posts.html">[posts]</a>
+        </nav>
+
+        <main>
+            <h2>Slang Dictionary</h2>
+            
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search slang terms..." class="search-input">
+                <input type="text" id="searchInput" placeholder="search...">
             </div>
 
-            <div class="terms-list">
-                <div class="term-card">
-                    <h3 class="term-word">Based</h3>
-                    <p class="term-definition">Being yourself without caring what others think. Authentic and confident.</p>
-                    <p class="term-example"><strong>Example:</strong> "That's a based take on the situation."</p>
-                </div>
+            <h3>Terms</h3>
 
-                <div class="term-card">
-                    <h3 class="term-word">Cope</h3>
-                    <p class="term-definition">To make excuses or rationalize something negative. Dealing with disappointment.</p>
-                    <p class="term-example"><strong>Example:</strong> "Stop coping about your loss, accept it!"</p>
-                </div>
-
-                <div class="term-card">
-                    <h3 class="term-word">Salty</h3>
-                    <p class="term-definition">Being upset, bitter, or frustrated about something. Acting grumpy.</p>
-                    <p class="term-example"><strong>Example:</strong> "Don't be so salty about losing the game!"</p>
-                </div>
-
-                <div class="term-card">
-                    <h3 class="term-word">Vibe</h3>
-                    <p class="term-definition">The feeling or atmosphere of something. The overall energy.</p>
-                    <p class="term-example"><strong>Example:</strong> "I'm getting good vibes from this."</p>
-                </div>
-
-                <div class="term-card">
-                    <h3 class="term-word">Mid</h3>
-                    <p class="term-definition">Something that is mediocre or not very good. Average quality.</p>
-                    <p class="term-example"><strong>Example:</strong> "That movie was mid, not worth watching."</p>
-                </div>
+            <div class="term">
+                <p><strong>based</strong></p>
+                <p>being yourself without caring what others think. authentic and confident.</p>
+                <p><small>ex: "that's a based take"</small></p>
             </div>
-        </div>
-    </main>
 
-    <footer>
-        <p>&copy; 2026 Panarchy. Made with ❤️ by the community.</p>
-    </footer>
+            <div class="term">
+                <p><strong>cope</strong></p>
+                <p>to make excuses or rationalize something negative.</p>
+                <p><small>ex: "stop coping about the loss"</small></p>
+            </div>
+
+            <div class="term">
+                <p><strong>salty</strong></p>
+                <p>being upset, bitter, or frustrated about something.</p>
+                <p><small>ex: "don't be so salty about losing"</small></p>
+            </div>
+
+            <div class="term">
+                <p><strong>vibe</strong></p>
+                <p>the feeling or atmosphere of something. the overall energy.</p>
+                <p><small>ex: "good vibes from this"</small></p>
+            </div>
+
+            <div class="term">
+                <p><strong>mid</strong></p>
+                <p>something that is mediocre or not very good.</p>
+                <p><small>ex: "that movie was mid"</small></p>
+            </div>
+
+        </main>
+
+        <footer>
+            <hr>
+            <p><small>Panarchy &copy; 2026</small></p>
+        </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>

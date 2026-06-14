@@ -4,62 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts - Panarchy</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; background: white; min-height: 100vh; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        header { text-align: center; border-bottom: 3px solid #333; padding-bottom: 20px; margin-bottom: 20px; }
+        h1 { font-size: 2.5em; margin-bottom: 5px; }
+        .tagline { font-style: italic; color: #666; }
+        nav { margin: 20px 0; text-align: center; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 15px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #0066cc; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; }
+        .section h2 { border-bottom: 2px solid #333; padding-bottom: 10px; margin-bottom: 15px; }
+        .board { border: 1px solid #ddd; padding: 15px; margin: 10px 0; background: #fafafa; border-left: 4px solid #0066cc; }
+        .board-name { color: #0066cc; font-weight: bold; margin-bottom: 5px; }
+        .board-desc { color: #666; }
+        footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #666; font-size: 0.9em; }
+    </style>
 </head>
 <body>
     <div class="container">
         <header>
             <h1>PANARCHY</h1>
-            <p>discussion boards</p>
-            <hr>
+            <p class="tagline">Discussion Boards</p>
         </header>
 
         <nav>
-            <a href="index.html">[home]</a> | 
-            <a href="dictionary.html">[dictionary]</a> | 
-            <a href="posts.html">[posts]</a>
+            <a href="index.html">HOME</a>
+            <a href="dictionary.html">DICTIONARY</a>
+            <a href="posts.html">POSTS</a>
         </nav>
 
-        <main>
+        <div class="section">
             <h2>Discussion Topics</h2>
-
-            <h3>Boards</h3>
-
+            
             <div class="board">
-                <p><a href="#">&gt; /gaming/</a> - games and gaming culture</p>
+                <div class="board-name">🎮 /gaming/</div>
+                <div class="board-desc">Games, gaming culture, and strategies</div>
             </div>
 
             <div class="board">
-                <p><a href="#">&gt; /entertainment/</a> - movies, tv, music</p>
+                <div class="board-name">🎬 /entertainment/</div>
+                <div class="board-desc">Movies, TV, music, and pop culture</div>
             </div>
 
             <div class="board">
-                <p><a href="#">&gt; /tech/</a> - technology and coding</p>
+                <div class="board-name">💻 /tech/</div>
+                <div class="board-desc">Technology, coding, and programming</div>
             </div>
 
             <div class="board">
-                <p><a href="#">&gt; /random/</a> - anything and everything</p>
+                <div class="board-name">🐱 /random/</div>
+                <div class="board-desc">Anything and everything off-topic</div>
             </div>
 
             <div class="board">
-                <p><a href="#">&gt; /learning/</a> - knowledge sharing</p>
+                <div class="board-name">📚 /learning/</div>
+                <div class="board-desc">Knowledge sharing and education</div>
             </div>
 
             <div class="board">
-                <p><a href="#">&gt; /creative/</a> - art, writing, projects</p>
+                <div class="board-name">🎨 /creative/</div>
+                <div class="board-desc">Art, writing, design, and projects</div>
             </div>
+        </div>
 
-            <h3>About</h3>
-            <p>posting functionality coming soon. for now, check out the dictionary and explore what panarchy is about.</p>
-
-        </main>
+        <div class="section">
+            <p><strong>Note:</strong> Posting functionality coming soon! For now, explore the boards and check out the dictionary.</p>
+        </div>
 
         <footer>
-            <hr>
-            <p><small>Panarchy &copy; 2026</small></p>
+            <p>Panarchy © 2026 | A community project</p>
         </footer>
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
